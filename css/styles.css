@@ -9,6 +9,7 @@
   --team-color: #f5f4fa;
   --border-nav: #ececec;
   --border-gallery: #eeeeee;
+  --border-customers: #afb1b8;
 }
 :focus {
   background-color: var(--backlight-color);
@@ -79,6 +80,13 @@ address {
 a {
   text-decoration: none;
 }
+.section {
+  padding: 94px 0;
+}
+.about-list {
+  display: flex;
+  gap: 30px;
+}
 .nav-item {
   font-weight: 500;
 }
@@ -101,18 +109,30 @@ a {
   margin-left: auto;
   padding: 32px 0;
 }
+
 .contact-link {
   text-decoration: none;
   color: var(--third-color);
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 .contact-link:hover {
   color: var(--backlight-color);
+}
+.contact-icon {
+  fill: currentColor;
+  stroke: currentColor;
 }
 .principal {
   background-color: var(--principal-color);
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
+  background-image: url(/images/Workers.jpg);
+  background-repeat: no-repeat;
+  background-size: 1600px;
+  background-position: center;
 }
 .principal-title {
   font-weight: 900;
@@ -180,10 +200,16 @@ button:focus {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-.commercial {
-  padding-bottom: 94px;
+.descrition-box {
+  background-color: var(--team-color);
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 30px;
 }
-.commercial-list {
+.descrition-box:hover {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.subtitle {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -191,12 +217,8 @@ button:focus {
   margin-top: 0;
   margin-bottom: 50px;
 }
-.section {
-  padding: 94px 0;
-}
-.about-list {
-  display: flex;
-  gap: 30px;
+.descrition {
+  padding-bottom: 0;
 }
 .descrition-title {
   font-weight: 700;
@@ -205,14 +227,13 @@ button:focus {
   margin-top: 0;
   margin-bottom: 10px;
 }
-.descrition {
+.descrition-p {
   line-height: 1.71;
   color: var(--third-color);
 }
 .team {
   background-color: var(--team-color);
   display: center;
-  padding: 94px 0;
 }
 .team-item {
   background-color: var(--background-color);
@@ -220,8 +241,52 @@ button:focus {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
+
+.customers-box {
+  border: 1px solid var(--border-customers);
+  width: 170px;
+  height: 92px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.customers-box:hover {
+  border: 1px solid var(--backlight-color);
+}
+.customers-icon {
+  fill: var(--border-customers);
+}
+.customers-icon:hover {
+  fill: var(--backlight-color);
+}
 .space-names {
-  padding: 30px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.social-box {
+  width: 206px;
+  height: 44px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+.back-icon {
+  box-sizing: border-box;
+  width: 44px;
+  height: 44px;
+  background-color: var(--background-color);
+  border-radius: 50%;
+}
+.back-icon:hover {
+  background-color: var(--backlight-color);
+}
+.social-icon {
+  fill: var(--border-customers);
+}
+.social-icon:hover {
+  fill: var(--background-color);
 }
 .names {
   font-weight: 500;
@@ -230,12 +295,14 @@ button:focus {
   text-align: center;
   margin-top: 0;
   margin-bottom: 10px;
+  padding-top: 30px;
 }
 .jobs {
   font-size: 16px;
   line-height: 1.18;
   color: var(--third-color);
   text-align: center;
+  margin-bottom: 16px;
 }
 .gallery-item {
   display: flex;
@@ -246,10 +313,14 @@ button:focus {
 .gallery {
   border: 1px solid var(--border-gallery);
   padding: 20px 24px;
-  margin-bottom: 4px;
 }
 .gallery-wrap {
   flex-wrap: wrap;
+  cursor: pointer;
+}
+.gallery-list:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .gallery-list {
   width: calc((100% - 60px) / 3);
@@ -260,6 +331,7 @@ button:focus {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  margin-bottom: 4px;
 }
 .gallery-subtitle {
   font-size: 16px;
@@ -302,4 +374,36 @@ button:focus {
 }
 .contact-footer-link:hover {
   color: var(--backlight-color);
+}
+.descrition-title-footer {
+  color: var(--background-color);
+  padding-bottom: 20px;
+}
+.social-footer {
+  display: flex;
+  flex-direction: column;
+  width: 206px;
+  height: 80px;
+  padding-top: 0px;
+  cursor: pointer;
+}
+.back-icon-footer {
+  display: inline-flex;
+  width: 44px;
+  height: 44px;
+  background-color: rgb(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+.back-icon-footer:hover {
+  background-color: var(--backlight-color);
+}
+.social-icon-footer {
+  fill: var(--border-customers);
+}
+.social-icon-footer:hover {
+  fill: var(--background-color);
+}
+.footer-box {
+  display: flex;
+  gap: 70px;
 }
