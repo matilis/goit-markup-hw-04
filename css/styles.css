@@ -1,26 +1,26 @@
 :root {
-  --background-color: #ffffff;
-  --main-color: #212121;
-  --secondary-color: #000000;
-  --third-color: #757575;
-  --accent-color: #ffffff99;
-  --backlight-color: #2196f3;
-  --principal-color: #2f303a;
-  --team-color: #f5f4fa;
-  --border-nav: #ececec;
-  --border-gallery: #eeeeee;
-  --border-customers: #afb1b8;
+	--background-color: #ffffff;
+	--main-color: #212121;
+	--secondary-color: #000000;
+	--third-color: #757575;
+	--accent-color: #ffffff99;
+	--backlight-color: #2196f3;
+	--principal-color: #2f303a;
+	--team-color: #f5f4fa;
+	--border-nav: #ececec;
+	--border-gallery: #eeeeee;
+	--border-customers: #afb1b8;
 }
 :focus {
-  background-color: var(--backlight-color);
-  outline: none;
+	background-color: var(--backlight-color);
+	outline: none;
 }
 body {
-  font-family: 'Roboto', sans-serif;
-  color: #212121;
-  background-color: #ffffff;
-  font-size: 14px;
-  letter-spacing: 0.03em;
+	font-family: "Roboto", sans-serif;
+	color: #212121;
+	background-color: #ffffff;
+	font-size: 14px;
+	letter-spacing: 0.03em;
 }
 h1,
 h2,
@@ -29,381 +29,378 @@ h4,
 h5,
 h6,
 p {
-  margin: 0;
+	margin: 0;
 }
 img {
-  display: block;
-  max-width: 100%;
-  height: auto;
+	display: block;
+	max-width: 100%;
+	height: auto;
 }
 .container {
-  width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
-  /* outline: 1px dashed red; */
+	width: 1200px;
+	margin: 0 auto;
+	padding: 0 15px;
+	/* outline: 1px dashed red; */
 }
 .nav-menu-border {
-  border-bottom: 1px solid var(--border-nav);
+	border-bottom: 1px solid var(--border-nav);
 }
 .nav-menu {
-  height: 80px;
-  display: flex;
-  align-items: center;
+	height: 80px;
+	display: flex;
+	align-items: center;
 }
 .nav-list {
-  display: flex;
-  gap: 50px;
+	display: flex;
+	gap: 50px;
 }
 .logo {
-  text-decoration: none;
-  font-family: 'Raleway', sans-serif;
-  font-size: 26px;
-  line-height: 1.19;
-  margin-right: 93px;
-  padding: 0;
+	text-decoration: none;
+	font-family: "Raleway", sans-serif;
+	font-size: 26px;
+	line-height: 1.19;
+	margin-right: 93px;
+	padding: 0;
 }
 .highlight-web {
-  color: var(--backlight-color);
+	color: var(--backlight-color);
 }
 .highlight-header {
-  color: var(--secondary-color);
+	color: var(--secondary-color);
 }
 ul {
-  list-style: none;
-  padding-left: 0;
-  margin: 0;
+	list-style: none;
+	padding-left: 0;
+	margin: 0;
 }
 address {
-  font-style: normal;
+	font-style: normal;
 }
 
 a {
-  text-decoration: none;
+	text-decoration: none;
 }
 .section {
-  padding: 94px 0;
+	padding: 94px 0;
 }
 .about-list {
-  display: flex;
-  gap: 30px;
+	display: flex;
+	gap: 30px;
 }
 .nav-item {
-  font-weight: 500;
+	font-weight: 500;
 }
 .nav-link {
-  text-decoration: none;
-  color: var(--main-color);
-  letter-spacing: 0.02em;
-  font-size: 14px;
-  padding: 32px 0;
+	text-decoration: none;
+	color: var(--main-color);
+	letter-spacing: 0.02em;
+	font-size: 14px;
+	padding: 32px 0;
 }
 .nav-link:hover {
-  color: var(--backlight-color);
+	color: var(--backlight-color);
 }
 .contact-list {
-  font-weight: 500;
-  line-height: 1, 14;
-  letter-spacing: 0.02em;
-  display: flex;
-  gap: 50px;
-  margin-left: auto;
-  padding: 32px 0;
+	font-weight: 500;
+	line-height: 1, 14;
+	letter-spacing: 0.02em;
+	display: flex;
+	gap: 50px;
+	margin-left: auto;
+	padding: 32px 0;
 }
 
 .contact-link {
-  text-decoration: none;
-  color: var(--third-color);
-  display: flex;
-  align-items: center;
-  gap: 10px;
+	text-decoration: none;
+	color: var(--third-color);
+	display: flex;
+	align-items: center;
+	gap: 10px;
 }
 .contact-link:hover {
-  color: var(--backlight-color);
+	color: var(--backlight-color);
 }
 .contact-icon {
-  fill: currentColor;
-  stroke: currentColor;
+	fill: currentColor;
+	stroke: currentColor;
 }
 .principal {
-  background-color: var(--principal-color);
-  padding-top: 200px;
-  padding-bottom: 200px;
-  text-align: center;
-  background-image: url(/images/Workers.jpg);
-  background-repeat: no-repeat;
-  background-size: 1600px;
-  background-position: center;
+	background-color: var(--principal-color);
+	padding-top: 200px;
+	padding-bottom: 200px;
+	text-align: center;
+	background-image: url(/images/Workers.jpg);
+	background-repeat: no-repeat;
+	background-size: 1600px;
+	background-position: center;
 }
 .principal-title {
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  letter-spacing: 0.06em;
-  color: var(--background-color);
-  text-align: center;
-  text-transform: uppercase;
-  width: 696px;
-  margin: 0 auto;
-  margin-bottom: 30px;
+	font-weight: 900;
+	font-size: 44px;
+	line-height: 1.36;
+	letter-spacing: 0.06em;
+	color: var(--background-color);
+	text-align: center;
+	text-transform: uppercase;
+	width: 696px;
+	margin: 0 auto;
+	margin-bottom: 30px;
 }
 .button1 {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.06em;
-  color: var(--background-color);
-  background-color: var(--backlight-color);
-  border: none;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  cursor: pointer;
-  width: 200px;
-  height: 50px;
+	font-family: "Roboto", sans-serif;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.87;
+	letter-spacing: 0.06em;
+	color: var(--background-color);
+	background-color: var(--backlight-color);
+	border: none;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	border-radius: 4px;
+	cursor: pointer;
+	width: 200px;
+	height: 50px;
 }
 .button1:hover {
-  color: var(--main-color);
-  background-color: var(--team-color);
+	color: var(--main-color);
+	background-color: var(--team-color);
 }
 .button2 {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  letter-spacing: 0.03em;
-  border: none;
-  color: var(--main-color);
-  background-color: var(--team-color);
-  cursor: pointer;
-  padding: 6px 22px;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
+	font-family: "Roboto", sans-serif;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.62;
+	letter-spacing: 0.03em;
+	border: none;
+	color: var(--main-color);
+	background-color: var(--team-color);
+	cursor: pointer;
+	padding: 6px 22px;
+	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+	border-radius: 4px;
 }
 .button2:hover {
-  background-color: var(--backlight-color);
-  color: var(--background-color);
+	background-color: var(--backlight-color);
+	color: var(--background-color);
 }
 button:focus {
-  background-color: var(--backlight-color);
-  outline: none;
+	background-color: var(--backlight-color);
+	outline: none;
 }
 .visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
 }
 .descrition-box {
-  background-color: var(--team-color);
-  border-radius: 4px;
-  cursor: pointer;
-  margin-bottom: 30px;
+	background-color: var(--team-color);
+	border-radius: 4px;
+	cursor: pointer;
+	margin-bottom: 30px;
 }
 .descrition-box:hover {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .subtitle {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-  margin-top: 0;
-  margin-bottom: 50px;
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.16;
+	text-align: center;
+	margin-top: 0;
+	margin-bottom: 50px;
 }
 .descrition {
-  padding-bottom: 0;
+	padding-bottom: 0;
 }
 .descrition-title {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  margin-top: 0;
-  margin-bottom: 10px;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.14;
+	margin-top: 0;
+	margin-bottom: 10px;
 }
 .descrition-p {
-  line-height: 1.71;
-  color: var(--third-color);
+	line-height: 1.71;
+	color: var(--third-color);
 }
 .team {
-  background-color: var(--team-color);
-  display: center;
+	background-color: var(--team-color);
+	display: center;
 }
 .team-item {
-  background-color: var(--background-color);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
+	background-color: var(--background-color);
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+	border-radius: 0px 0px 4px 4px;
 }
 
 .customers-box {
-  border: 1px solid var(--border-customers);
-  width: 170px;
-  height: 92px;
-  border-radius: 4px;
-  cursor: pointer;
+	border: 1px solid var(--border-customers);
+	width: 170px;
+	height: 92px;
+	border-radius: 4px;
+	cursor: pointer;
 }
 .customers-box:hover {
-  border: 1px solid var(--backlight-color);
+	border: 1px solid var(--backlight-color);
 }
 .customers-icon {
-  fill: var(--border-customers);
+	fill: var(--border-customers);
 }
 .customers-icon:hover {
-  fill: var(--backlight-color);
+	fill: var(--backlight-color);
 }
 .space-names {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 .social-box {
-  width: 206px;
-  height: 44px;
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 30px;
-  cursor: pointer;
+	width: 206px;
+	height: 44px;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 30px;
+	cursor: pointer;
 }
 
 .back-icon {
-  box-sizing: border-box;
-  width: 44px;
-  height: 44px;
-  background-color: var(--background-color);
-  border-radius: 50%;
+	box-sizing: border-box;
+	width: 44px;
+	height: 44px;
+	background-color: var(--background-color);
+	border-radius: 50%;
 }
 .back-icon:hover {
-  background-color: var(--backlight-color);
+	background-color: var(--backlight-color);
 }
 .social-icon {
-  fill: var(--border-customers);
+	fill: var(--border-customers);
 }
 .social-icon:hover {
-  fill: var(--background-color);
+	fill: var(--background-color);
 }
 .names {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.18;
-  text-align: center;
-  margin-top: 0;
-  margin-bottom: 10px;
-  padding-top: 30px;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.18;
+	text-align: center;
+	margin-top: 0;
+	margin-bottom: 10px;
+	padding-top: 30px;
 }
 .jobs {
-  font-size: 16px;
-  line-height: 1.18;
-  color: var(--third-color);
-  text-align: center;
-  margin-bottom: 16px;
+	font-size: 16px;
+	line-height: 1.18;
+	color: var(--third-color);
+	text-align: center;
+	margin-bottom: 16px;
 }
 .gallery-item {
-  display: flex;
-  justify-content: center;
-  gap: 8px;
-  margin-bottom: 50px;
+	display: flex;
+	justify-content: center;
+	gap: 8px;
+	margin-bottom: 50px;
 }
 .gallery {
-  border: 1px solid var(--border-gallery);
-  padding: 20px 24px;
+	border: 1px solid var(--border-gallery);
+	padding: 20px 24px;
 }
 .gallery-wrap {
-  flex-wrap: wrap;
-  cursor: pointer;
+	flex-wrap: wrap;
+	cursor: pointer;
 }
 .gallery-list:hover {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
+	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .gallery-list {
-  width: calc((100% - 60px) / 3);
+	width: calc((100% - 60px) / 3);
 }
 
 .gallery-title {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-  margin-bottom: 4px;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 2;
+	letter-spacing: 0.06em;
+	margin-bottom: 4px;
 }
 .gallery-subtitle {
-  font-size: 16px;
-  line-height: 1.87;
-  color: var(--third-color);
+	font-size: 16px;
+	line-height: 1.87;
+	color: var(--third-color);
 }
 .contact {
-  background-color: var(--principal-color);
-  padding: 60px 0;
+	background-color: var(--principal-color);
+	padding: 60px 0;
 }
 .contact-footer {
-  font-style: normal;
-  margin-top: 20px;
+	font-style: normal;
+	margin-top: 20px;
 }
 .contact-footer-item {
-  margin-bottom: 9px;
+	margin-bottom: 9px;
 }
 .contact-footer-item:last-child {
-  margin-bottom: 0px;
+	margin-bottom: 0px;
 }
 
 .highlight-footer {
-  font-family: 'Raleway', sans-serif;
-  font-size: 26px;
-  line-height: 1.19;
-  color: var(--background-color);
+	font-family: "Raleway", sans-serif;
+	font-size: 26px;
+	line-height: 1.19;
+	color: var(--background-color);
 }
 .contact-footer-link-map {
-  text-decoration: none;
-  line-height: 1.71;
-  color: var(--background-color);
+	text-decoration: none;
+	line-height: 1.71;
+	color: var(--background-color);
 }
 .contact-footer-link-map:hover {
-  color: var(--backlight-color);
+	color: var(--backlight-color);
 }
 .contact-footer-link {
-  text-decoration: none;
-  line-height: 1.71;
-  color: var(--accent-color);
+	text-decoration: none;
+	line-height: 1.71;
+	color: var(--accent-color);
 }
 .contact-footer-link:hover {
-  color: var(--backlight-color);
+	color: var(--backlight-color);
 }
 .descrition-title-footer {
-  color: var(--background-color);
-  padding-bottom: 20px;
+	color: var(--background-color);
+	padding-bottom: 20px;
 }
 .social-footer {
-  display: flex;
-  flex-direction: column;
-  width: 206px;
-  height: 80px;
-  padding-top: 0px;
-  cursor: pointer;
+	display: flex;
+	flex-direction: column;
+	width: 206px;
+	height: 80px;
+	padding-top: 0px;
+	cursor: pointer;
 }
 .back-icon-footer {
-  display: inline-flex;
-  width: 44px;
-  height: 44px;
-  background-color: rgb(255, 255, 255, 0.1);
-  border-radius: 50%;
+	display: inline-flex;
+	width: 44px;
+	height: 44px;
+	background-color: rgb(255, 255, 255, 0.1);
+	border-radius: 50%;
 }
 .back-icon-footer:hover {
-  background-color: var(--backlight-color);
+	background-color: var(--backlight-color);
 }
 .social-icon-footer {
-  fill: var(--border-customers);
+	fill: var(--border-customers);
 }
 .social-icon-footer:hover {
-  fill: var(--background-color);
+	fill: var(--background-color);
 }
 .footer-box {
-  display: flex;
-  gap: 70px;
+	display: flex;
+	gap: 70px;
 }
