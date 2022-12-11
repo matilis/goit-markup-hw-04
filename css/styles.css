@@ -61,6 +61,7 @@ img {
   line-height: 1.19;
   margin-right: 93px;
   padding: 0;
+  display: flex;
 }
 .highlight-web {
   color: var(--backlight-color);
@@ -122,17 +123,20 @@ a {
 }
 .contact-icon {
   fill: currentColor;
-  stroke: currentColor;
 }
 .principal {
   background-color: var(--principal-color);
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
-  background-image: url(/images/Workers.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/Workers.jpg);
   background-repeat: no-repeat;
-  background-size: 1600px;
+  background-size: cover;
   background-position: center;
+  max-width: 1600px;
+  height: 600px;
+  margin: 0 auto;
 }
 .principal-title {
   font-weight: 900;
@@ -205,6 +209,11 @@ button:focus {
   border-radius: 4px;
   cursor: pointer;
   margin-bottom: 30px;
+  height: 120px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .descrition-box:hover {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -244,46 +253,47 @@ button:focus {
 
 .customers-box {
   border: 1px solid var(--border-customers);
+  color: var(--border-customers);
   width: 170px;
   height: 92px;
   border-radius: 4px;
-  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .customers-box:hover {
   border: 1px solid var(--backlight-color);
 }
 .customers-icon {
-  fill: var(--border-customers);
+  fill: currentColor;
 }
 .customers-icon:hover {
-  fill: var(--backlight-color);
+  fill: var(--background-color);
 }
 .space-names {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  padding: 30px 0;
 }
 .social-box {
-  width: 206px;
-  height: 44px;
   display: flex;
-  justify-content: space-between;
-  margin-bottom: 30px;
-  cursor: pointer;
+  justify-content: center;
+  gap: 10px;
 }
 
 .back-icon {
   box-sizing: border-box;
   width: 44px;
   height: 44px;
-  background-color: var(--background-color);
   border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--border-customers);
 }
 .back-icon:hover {
   background-color: var(--backlight-color);
 }
 .social-icon {
-  fill: var(--border-customers);
+  fill: currentColor;
 }
 .social-icon:hover {
   fill: var(--background-color);
@@ -295,7 +305,6 @@ button:focus {
   text-align: center;
   margin-top: 0;
   margin-bottom: 10px;
-  padding-top: 30px;
 }
 .jobs {
   font-size: 16px;
@@ -316,7 +325,6 @@ button:focus {
 }
 .gallery-wrap {
   flex-wrap: wrap;
-  cursor: pointer;
 }
 .gallery-list:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
@@ -332,6 +340,7 @@ button:focus {
   line-height: 2;
   letter-spacing: 0.06em;
   margin-bottom: 4px;
+  color: var(--secondary-color);
 }
 .gallery-subtitle {
   font-size: 16px;
@@ -352,7 +361,10 @@ button:focus {
 .contact-footer-item:last-child {
   margin-bottom: 0px;
 }
-
+.footer-box {
+  display: flex;
+  align-items: baseline;
+}
 .highlight-footer {
   font-family: 'Raleway', sans-serif;
   font-size: 26px;
@@ -377,33 +389,26 @@ button:focus {
 }
 .descrition-title-footer {
   color: var(--background-color);
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 .social-footer {
-  display: flex;
-  flex-direction: column;
-  width: 206px;
-  height: 80px;
-  padding-top: 0px;
-  cursor: pointer;
+  margin-left: 70px;
 }
 .back-icon-footer {
-  display: inline-flex;
+  box-sizing: border-box;
   width: 44px;
   height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: rgb(255, 255, 255, 0.1);
   border-radius: 50%;
+  color: var(--background-color);
 }
 .back-icon-footer:hover {
   background-color: var(--backlight-color);
 }
 .social-icon-footer {
-  fill: var(--border-customers);
-}
-.social-icon-footer:hover {
-  fill: var(--background-color);
-}
-.footer-box {
-  display: flex;
-  gap: 70px;
+  fill: currentColor;
 }
